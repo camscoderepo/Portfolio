@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/superslides.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/three.r92.min.js"></script>
+<script src="https://www.vantajs.com/dist/vanta.birds.min.js"></script>
+
+</head>
+<body>
+
+  <div class="loader">
+    <div class="inner"></div>
+  </div>
+
+
+
+<div>
+ 
+  <div class="titleMessage">
+    <div class="heading">
+      <p class="name">Cameron Roman</p>
+      <p class="sub typed"></p>
+    </div>
+  </div>
+  <div id="birds"></div>
+</div>
+
+
+<nav id="navigation" class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item active">
+          <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#stats">Stats<span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+  <div id="about" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <img class="aboutImage" src="img/about.jpg">
+        </div>
+        <div class="col-md-7">
+          <h4>My name is Cameron Roman</h4>
+          <p>Hi there! I'm Cameron Roman and I'm from Denver, Colorado. I am a self-taught web developer seeking employment opportunities wherever they can 
+          be found. I have made many apps for myself, as well as real world clients. I thrive on quality work and always will put the time into something to make
+          it special and stand out. I have experience with javascript, C#, Python, PHP, Microsoft SQL Server, MongoDB, Node.js, React, HTML5, and CSS3. Most of my github
+          projects have been written in javascript which is my favorite language to work in.
+          </p>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div id="stats" class="statsSection section" style="background-color: #24A7FE; color: #fff;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+
+        <div class="squareItem">
+
+          <div class="squareInnerContainer">
+
+            <div class="squareIcon">
+              <i class="fa fa-clock"></i>
+            </div>
+
+            <div class="squareContent">
+              <h2 class="counter">5</h2>
+              <h3>Years of experience</h3>
+            </div>
+
+          </div>
+
+        </div>
+       
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+          <div class="squareItem">
+            <div class="squareInnerContainer">
+              <div class="squareIcon">
+                <i class="fa fa-clock"></i>
+              </div>
+              <div class="squareContent">
+                <h2>0</h2>
+                <h3>Clients</h3>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <i class="fa fa-clock"></i>
+                </div>
+                <div class="squareContent">
+                  <h2>5</h2>
+                  <h3>Projects</h3>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+              <div class="squareItem">
+                <div class="squareInnerContainer">
+                  <div class="squareIcon">
+                    <i class="fa fa-clock"></i>
+                  </div>
+                  <div class="squareContent">
+                    <h2>?</h2>
+                    <h3>lines coded</h3>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+    </div>
+  </div>
+</div>
+
+<div id="skills" class="skillsSection section">
+  <div class="col-sm-8 hidden-xs">
+    <div id="container" style="height: 400px"></div>
+  </div>  
+</div>
+
+<div id="contact" class="contactSection section" >
+  <div class="col-md-12 text-center">
+    <p class="subHeading">Like what you see</p>
+    <h2>I would love to hear from you</h2>
+    <a href="mailTo:camroman95@gmail.com" class="contactButton">GET IN TOUCH!</a>
+  </div>
+</div>
+
+<div id="portfolio" class="section">
+  <div class="container">
+    <div class="row">
+     <div class="heading">
+       <h2>PORTFOLIO</h2>
+     </div>
+     <div class="filter">
+       <ul id="filters">
+         <li><a href="#" data-filter="*" class="current">ALL</a></li>
+         <li><a href="#" data-filter=".apps" >Apps</a></li>
+         <li><a href="#" data-filter=".me" >me</a></li>
+         <li><a href="#" data-filter=".websites" >Websites</a></li>
+       </ul>
+     </div>
+     <div class="itemsContainer">
+      <ul class="items">
+        <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="item">
+            <img src="img/portfolio/thumbnails/squarepuppycup.jpg">
+            <div class="icons">
+              <a href="img/portfolio/puppycup.jpg" title="View image" class="openButton" data-fancybox data-caption="This is a cute puppy in a cup">
+                <i class="fa fa-search"></i>
+              </a>
+
+              <a href="https://facebook.com" target="_blank" class="projectLink">
+                <i class="fa fa-link"></i>
+              </a>
+            </div>
+            <div class="imageOverlay"></div>
+          </div>
+        </li>
+
+        <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+            <div class="item">
+              <img src="img/portfolio/thumbnails/squarepuppycup.jpg">
+              <div class="icons">
+                <a href="img/portfolio/puppycup.jpg" title="View image" class="openButton" data-fancybox data-caption="This is a cute puppy in a cup">
+                  <i class="fa fa-search"></i>
+                </a>
+  
+                <a href="" target="_blank" class="projectLink">
+                  <i class="fa fa-link"></i>
+                </a>
+              </div>
+              <div class="imageOverlay"></div>
+            </div>
+          </li>
+
+          <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+              <div class="item">
+                <img src="img/portfolio/thumbnails/squarepuppycup.jpg">
+                <div class="icons">
+                  <a href="img/portfolio/puppycup.jpg" title="View image" class="openButton" data-fancybox data-caption="This is a cute puppy in a cup">
+                    <i class="fa fa-search"></i>
+                  </a>
+    
+                  <a href="" target="_blank" class="projectLink">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+                <div class="imageOverlay"></div>
+              </div>
+            </li>
+
+            <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img src="img/portfolio/thumbnails/squarepuppycup.jpg">
+                  <div class="icons">
+                    <a href="img/portfolio/puppycup.jpg" title="View image" class="openButton" data-fancybox data-caption="This is a cute puppy in a cup">
+                      <i class="fa fa-search"></i>
+                    </a>
+      
+                    <a href="" target="_blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+
+              <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                  <div class="item">
+                    <img src="img/portfolio/thumbnails/squarepuppycup.jpg">
+                    <div class="icons">
+                      <a href="img/portfolio/puppycup.jpg" title="View image" class="openButton" data-fancybox data-caption="This is a cute puppy in a cup">
+                        <i class="fa fa-search"></i>
+                      </a>
+        
+                      <a href="" target="_blank" class="projectLink">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                    <div class="imageOverlay"></div>
+                  </div>
+                </li>
+
+                <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <div class="item">
+                      <img src="img/portfolio/thumbnails/squarepuppycup.jpg">
+                      <div class="icons">
+                        <a href="img/portfolio/puppycup.jpg" title="View image" class="openButton" data-fancybox data-caption="This is a cute puppy in a cup">
+                          <i class="fa fa-search"></i>
+                        </a>
+          
+                        <a href="" target="_blank" class="projectLink">
+                          <i class="fa fa-link"></i>
+                        </a>
+                      </div>
+                      <div class="imageOverlay"></div>
+                    </div>
+                  </li>
+
+
+                <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                  <div class="item">
+                    <img src="img/portfolio/thumbnails/squarepuppycup.jpg">
+                    <div class="icons">
+                      <a href="img/portfolio/puppycup.jpg" title="View image" class="openButton" data-fancybox data-caption="This is a cute puppy in a cup">
+                        <i class="fa fa-search"></i>
+                      </a>
+        
+                      <a href="" target="_blank" class="projectLink">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                    <div class="imageOverlay"></div>
+                  </div>
+                </li>
+
+
+
+                <li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                  <div class="item">
+                    <img src="img/portfolio/thumbnails/squarepuppycup.jpg">
+                    <div class="icons">
+                      <a href="img/portfolio/puppycup.jpg" title="View image" class="openButton" data-fancybox data-caption="This is a cute puppy in a cup">
+                        <i class="fa fa-search"></i>
+                      </a>
+        
+                      <a href="http:facebook.com" target="_blank" class="projectLink">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                    <div class="imageOverlay"></div>
+                  </div>
+                </li>
+
+
+
+
+                <li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                  <div class="item">
+                    <img src="img/portfolio/thumbnails/squarepuppycup.jpg">
+                    <div class="icons">
+                      <a href="img/portfolio/puppycup.jpg" title="View image" class="openButton" data-fancybox data-caption="This is a cute puppy in a cup">
+                        <i class="fa fa-search"></i>
+                      </a>
+        
+                      <a href="" target="_blank" class="projectLink">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                    <div class="imageOverlay"></div>
+                  </div>
+                </li>
+        
+      </ul>
+     </div>
+    </div>
+  </div>
+</div>
+
+<div class="copyrightSection">
+  <div class="col-md-12 text-center">
+    <p>&copy; Copyright Cameron Roman 2019</p>
+  </div>
+</div>
+
+
+
+
+
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+<script src="https://code.highcharts.com/highcharts.src.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/countUp-jquery.js"></script>
+<script src="js/countUp.js"></script>
+<script src="js/jquery.easypiechart.min.js"></script>
+<script src="js/jquery.superslides.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
