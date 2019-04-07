@@ -15,11 +15,6 @@ $(window).on("load", function() {
 });
 
 $(document).ready(function() {
-    $('#slides').superslides({
-        animation: 'fade',
-        play: 5000,
-        pagination: false
-    });
     var typed = new Typed(".typed", {
         strings: ["Coding Ninja", "Script Kiddie", "Autodictact"],
         typeSpeed: 70,
@@ -27,28 +22,6 @@ $(document).ready(function() {
         startDelay: 1000,
         showCursor: false
     }); 
-
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            480:{
-                items:2
-            },
-            768:{
-                items:3
-            },
-            1000:{
-                items:5
-            }
-        }
-    });
-
- 
 
    var skillsTopOffset = $(".skillsSection").offset().top;
 
@@ -98,6 +71,13 @@ $(document).ready(function() {
     });
 
 
+    $("#navigation .navbar-brand a").click(function(e) {
+        e.preventDefault();
+        var targetElement = $(this).attr("href");
+        var targetPosition = $(targetElement).offset().top;
+        $("html, body").animate({ scrollTop: targetPosition - 50 }, "slow")
+    });
+
     const nav = $("#navigation");
     const navTop = nav.offset().top;
 
@@ -117,7 +97,17 @@ $(document).ready(function() {
         }
     }
 
-    
+    // $(window).on("scroll", stickyNavigation);
+
+    // function navAltText() {
+
+    //     var section = $("section");
+        
+    //     if($(window).)
+    // }
+
+
+    //Highchart pie chart
     Highcharts.chart('container', {
         chart: {
             type: 'pie',
@@ -163,11 +153,12 @@ $(document).ready(function() {
         }]
     });
 
+    //Vanta.JS background animation
     VANTA.BIRDS({
         el: "#birds",
         backgroundColor: 0xf7bff,
-        color1: 0xcf1d1d,
-        color2: 0xc0c033,
+        //color1: 0xcf1d1d,
+        //color2: 0xc0c033,
         wingSpan: 35.00,
         speedLimit: 9.00,
         quantity: 5.00,
