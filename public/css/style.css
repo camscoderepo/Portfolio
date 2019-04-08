@@ -411,3 +411,12 @@ body {
 .highcharts-credits {
     display: none;
 }
+
+.title {
+    text-align: center;
+    padding-bottom: 84px;
+    font-size: 44px;
+}
+.subHeading {
+    font-size: 24px;
+}
