@@ -33,13 +33,21 @@ body {
 
 .titleMessage .heading .name {
     font-size: 35px;
+    color: black;
 }
 
 .titleMessage .heading .sub {
     font-size: 20px;
 }
 
+#about {
+    background-color: #fefbd8;
+}
 
+
+#skills {
+    background-color: #fefbd8;
+}
 
 .section {
     padding: 100px 0;
@@ -148,7 +156,7 @@ body {
 }
 .contactButton:hover {
     text-decoration: none;
-    color: #e74c3c;
+    color: #0f7bff;
     background-color: #fff;
 }
 
@@ -305,7 +313,6 @@ body {
 }
 
 #navigation {
-    width: 100%;
     padding: 20px 10px;
     z-index: 100;
 }
@@ -316,13 +323,13 @@ body {
 
 
 #navigation li a {
-    color: #000;
+    color: black;
 }
 
 
 .navbar-brand,
 .navbar-brand:hover {
-    color: #000;
+    color: black;
 }
 
 .navbar-toggler-icon {
@@ -333,6 +340,7 @@ body {
 .fixedNav #navigation {
     position: fixed;
     top: 0;
+    text-align:center;
 }
 
 .loader {
@@ -419,4 +427,8 @@ body {
 }
 .subHeading {
     font-size: 24px;
+}
+
+.data-highcharts-chart {
+    background-color: #ffdab9 !important;
 }

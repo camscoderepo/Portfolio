@@ -71,13 +71,6 @@ $(document).ready(function() {
     });
 
 
-    $("#navigation .navbar-brand a").click(function(e) {
-        e.preventDefault();
-        var targetElement = $(this).attr("href");
-        var targetPosition = $(targetElement).offset().top;
-        $("html, body").animate({ scrollTop: targetPosition - 50 }, "slow")
-    });
-
     const nav = $("#navigation");
     const navTop = nav.offset().top;
 
@@ -97,28 +90,21 @@ $(document).ready(function() {
         }
     }
 
-    // $(window).on("scroll", stickyNavigation);
-
-    // function navAltText() {
-
-    //     var section = $("section");
-        
-    //     if($(window).)
-    // }
-
 
     //Highchart pie chart
     Highcharts.chart('container', {
         chart: {
+            backgroundColor: '#fefbd8',
             type: 'pie',
             options3d: {
                 enabled: true,
                 alpha: 45,
                 beta: 0
             }
+            
         },
         title: {
-            text: 'Skills Section'
+            text: 'Language Pie Chart'
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
