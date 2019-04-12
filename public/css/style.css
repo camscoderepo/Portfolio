@@ -342,6 +342,7 @@ body {
     position: fixed;
     top: 0;
     text-align:center;
+    width: 95%;
 }
 
 .loader {
@@ -432,4 +433,16 @@ body {
 
 .data-highcharts-chart {
     background-color: #ffdab9 !important;
+}
+hr {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+    background-color:#444;
+    }
+
+.portTitle {
+    text-align: center;
+    font-size: 44px;
 }
