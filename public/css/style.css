@@ -440,3 +440,7 @@ hr {
 .canvas-container div {
     height: 970px !important;
 }
+
+.navbar {
+    background-color:#fefbd8;
+}
