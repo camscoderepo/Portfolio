@@ -314,7 +314,7 @@ body {
 }
 
 #navigation {
-    padding: 20px 10px;
+    padding: 20px 670px;
     z-index: 100;
 }
 
@@ -342,7 +342,9 @@ body {
     position: fixed;
     top: 0;
     text-align:center;
-    width: 95%;
+    width: 100%;
+    background-color: #fefbd8;
+    height: 55px;
 }
 
 .loader {
