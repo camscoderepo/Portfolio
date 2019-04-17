@@ -153,13 +153,30 @@ body {
     display: inline-block;
     margin-top: 20px;
     border: 1px solid #fff;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 .contactButton:hover {
     text-decoration: none;
     color: #0f7bff;
     background-color: #fff;
 }
+
+.resumeButton {
+    color: #fff;
+    padding: 15px 35px;
+    display: inline-block;
+    margin-top: -15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: sans-serif,fantasy;
+}
+.resumeButton:hover {
+    text-decoration: none;
+    color: #0f7bff;
+    background-color: #fff;
+}
+
 
 
 .filter a {
@@ -446,4 +463,9 @@ hr {
 
 .navbar {
     background-color:#fefbd8;
+}
+
+#resume .title p {
+    font-size: 20px;
+    margin-bottom: -40px;
 }
