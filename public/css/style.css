@@ -318,12 +318,13 @@ body {
 }
 
 #navigation {
-    padding: 20px 670px;
+    padding: 20px 680px;
     z-index: 100;
 }
 
 #navigation li {
     padding: 0 10px;
+    text-align: center;
 }
 
 
