@@ -335,7 +335,7 @@ body {
 }
 
 #navigation {
-    padding: 20px 717px;
+    padding: 20px 15px;
     z-index: 100;
 }
 
@@ -472,4 +472,8 @@ hr {
 
 body {
     overflow-x:hidden;
+}
+
+@media (min-width:481px) and (max-width: 767px) {
+    #navigation {padding: 0px 0px !important;}
 }
