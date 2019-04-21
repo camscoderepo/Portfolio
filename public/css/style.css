@@ -220,7 +220,7 @@ body {
     -moz-transition: all 0.2s linear, 1s;
     -o-transition: all 0.2s linear, 1s;
     -ms-transition: all 0.2s linear, 1s;
-    -transition: all 0.2s linear, 1s;
+     transition: all 0.2s linear, 1s;
 
     height: 250px;
 }
@@ -262,7 +262,7 @@ body {
     -moz-transition: all 0.2s linear, 0.5s;
     -o-transition: all 0.2s linear, 0.5s;
     -ms-transition: all 0.2s linear, 0.5s;
-    -transition: all 0.2s linear, 0.5s;
+     transition: all 0.2s linear, 0.5s;
 
 }
 
@@ -279,7 +279,7 @@ body {
     -moz-transition: all 0.2s linear, 1s;
     -o-transition: all 0.2s linear, 1s;
     -ms-transition: all 0.2s linear, 1s;
-    -transition: all 0.2s linear, 1s;
+     transition: all 0.2s linear, 1s;
 }
 
 .items .item:hover .imageOverlay {
@@ -309,7 +309,7 @@ body {
     -moz-transform: scale(1.05, 1.05);
     -o-transform: scale(1.05, 1.05);
     -ms-transform: scale(1.05, 1.05);
-    -transform: scale(1.05, 1.05);
+     transform: scale(1.05, 1.05);
 }
 
 .items {
