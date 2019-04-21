@@ -1,3 +1,8 @@
+html {
+    overflow-x:hidden;
+}
+
+
 body {
     font-size: 15px;
     color: #333;
