@@ -4,10 +4,11 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const path = require('path');
 
+app.use(sslRedirect());
 
 app.use(express.static('public'));
 
-app.use(sslRedirect());
+
 
 app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'public'));
