@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const path = require('path');
 
-app.use(sslRedirect());
+app.use(sslRedirect(['production'], 301));
 
 app.use(express.static('public'));
 
