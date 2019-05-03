@@ -9,6 +9,7 @@ body {
     background-color: #fff;
     letter-spacing: 1px;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .titleMessage {
