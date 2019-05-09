@@ -390,14 +390,6 @@ body {
 	margin: 0 auto;
 }
 
-/*
-.push-left  {
-    margin-right: 92px !important;
-}
-
-*/
-
-
 .h2 {
 
     font-family: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -469,4 +461,7 @@ hr {
     margin-bottom: -40px;
 }
 
+p {
+    font-size: 18px;
+}
 
