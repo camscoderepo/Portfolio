@@ -16,7 +16,7 @@ $(window).on("load", function() {
 
 $(document).ready(function() {
     var typed = new Typed(".typed", {
-        strings: ["Coding Ninja", "Gaming Enthusiast", "Autodictact"],
+        strings: ["Coding Ninja", "Gaming Enthusiast", "Autodidact"],
         typeSpeed: 70,
         loop: true,
         startDelay: 1000,
