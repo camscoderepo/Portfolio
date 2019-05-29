@@ -333,8 +333,7 @@ body {
 }
 
 #navigation {
-    padding: 20px 15px;
-    z-index: 100;
+    z-index: 2;
 }
 
 #navigation li {
