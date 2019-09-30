@@ -71,7 +71,7 @@ $(document).ready(function() {
     }
 
 
-    //Highchart pie chart
+    //Highchart pie chart (skills chart)
     Highcharts.chart('container', {
         chart: {
             backgroundColor: '#fefbd8',
