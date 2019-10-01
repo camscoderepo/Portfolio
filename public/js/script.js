@@ -127,7 +127,7 @@ $(document).ready(function() {
         //color2: 0xc0c033,
         wingSpan: 35.00,
         speedLimit: 9.00,
-        quantity: 2.00,
+        quantity: 3.00,
         separation: 20,
         cohesion: 20
       })
