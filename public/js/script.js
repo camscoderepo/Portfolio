@@ -1,4 +1,3 @@
-
 $(window).on("load", function() {
     $(".loader .inner").fadeOut(500, function() {
         $(".loader").fadeOut(750);
@@ -133,18 +132,23 @@ $(document).ready(function() {
             throw new Error('Network response was not good')
         }
         const data = await response.json()
+
         const names = data.map(name => {
             return name.name
         })
         
+     let array = names;
 
-        document.getElementById("names").innerHTML = names;
+     array.forEach(function (item, index) {
+         document.getElementById("names").innerHTML += item;
+     });
+
+     
     } catch(error) {
         console.log(error.message);
     }
 }
-
-console.log(getRepoNames());
+getRepoNames();
 
 
 
