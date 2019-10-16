@@ -1,3 +1,4 @@
+
 $(window).on("load", function() {
     $(".loader .inner").fadeOut(500, function() {
         $(".loader").fadeOut(750);
@@ -15,6 +16,7 @@ $(window).on("load", function() {
 });
 
 $(document).ready(function() {
+    //typed plugin types words on its own
     var typed = new Typed(".typed", {
         strings: ["Coding Ninja", "Gaming Enthusiast", "Autodidact"],
         typeSpeed: 70,
@@ -43,6 +45,7 @@ $(document).ready(function() {
         return false;
     });
 
+    //navigation sticky top on scroll
     $("#navigation li a").click(function(e) {
         e.preventDefault();
         var targetElement = $(this).attr("href");
@@ -119,6 +122,43 @@ $(document).ready(function() {
         }]
     });
 
+    
+    
+    
+    const getRepoNames = async () =>
+{
+    try{
+        const response = await fetch(`https://api.github.com/users/camscoderepo/repos`);
+        if(!response.status){
+            throw new Error('Network response was not good')
+        }
+        const data = await response.json()
+        const names = data.map(name => {
+            return name.name
+        })
+        
+
+        document.getElementById("names").innerHTML = names;
+    } catch(error) {
+        console.log(error.message);
+    }
+}
+
+console.log(getRepoNames());
+
+
+
+
+
+
+
+    //fetch api request to github repos
+    // fetch('https://api.github.com/users/camscoderepo/repos')
+    // .then(res => res.json())
+    // .then(res => res.map(data => data.url))
+    // .then(urls => console.log(urls));
+    // document.getElementsByClassName('projectLink')
+    
     //Vanta.JS background animation
     VANTA.BIRDS({
         el: "#birds",
