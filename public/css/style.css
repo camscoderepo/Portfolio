@@ -9,6 +9,19 @@ body{
     width:100%;
     overflow-x:hidden
 }
+
+    @media only screen and (max-width:900px) {
+        #birds {
+            -webkit-animation: none !important;
+            -moz-animation: none !important;
+            -o-animation: none !important;
+            -ms-animation: none !important;
+            animation: none !important;
+            background-color: #0f7bff;
+        }
+    
+    }
+
 .titleMessage{
     position:absolute;
     width:100%;
