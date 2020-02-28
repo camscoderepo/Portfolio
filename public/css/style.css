@@ -10,7 +10,7 @@ body{
     overflow-x:hidden
 }
 
-    @media only screen and (max-width:900px) {
+    /* @media only screen and (max-width:900px) {
         #birds {
             -webkit-animation: none !important;
             -moz-animation: none !important;
@@ -20,7 +20,7 @@ body{
             background-color: #0f7bff;
         }
     
-    }
+    } */
 
 .titleMessage{
     position:absolute;
@@ -31,6 +31,7 @@ body{
     text-align:center;
     margin-top:-125px
 }
+
 .titleMessage .heading p{
     color:#ffff;
     text-shadow:0 2px 5px rgba(0,0,0,.4);

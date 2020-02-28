@@ -15,9 +15,9 @@ $(window).on("load", function() {
 });
 
 $(document).ready(function() {
-    //typed plugin types words on its own
+    //Typed plugin
     var typed = new Typed(".typed", {
-        strings: ["Coding Ninja", "Gaming Enthusiast", "Autodidact"],
+        strings: ["Developer", "JavaScript Enthusiast", "Autodidact"],
         typeSpeed: 70,
         loop: true,
         startDelay: 1000,
@@ -25,7 +25,7 @@ $(document).ready(function() {
     }); 
    
    $("[data-fancybox]").fancybox();
-
+   //filters for portfolio
    $("#filters a").click(function() {
        $("#filters .current").removeClass("current");
        $(this).addClass("current");
@@ -53,6 +53,7 @@ $(document).ready(function() {
     });
 
 
+    //sticky navigation code
     const nav = $("#navigation");
     const navTop = nav.offset().top;
 
@@ -122,46 +123,46 @@ $(document).ready(function() {
     });
 
     
-    
-    
-    const getRepoNames = async () =>
-{
-    try{
-        const response = await fetch(`https://api.github.com/users/camscoderepo/repos`);
-        if(!response.status){
-            throw new Error('Network response was not good')
-        }
-        const data = await response.json()
 
-        const names = data.map(name => {
-            return name.name
-        })
-        
-     let array = names;
+    //promise to get github repositories
+//     const getRepoNames = async () =>
+// {
+//         const response = await fetch(`https://api.github.com/users/camscoderepo/repos`);
+//         if(!response.status){
+//             throw new Error('Network response was not good')
+//         }
+//         const data = await response.json()
 
-     array.forEach(function (item, index) {
-         document.getElementById("names").innerHTML += item;
-     });
+//         const names = await data.map(name => {
+//             return name.name
+//         }) 
+//         return names
+//     } 
 
-     
-    } catch(error) {
-        console.log(error.message);
-    }
+// console.log(getRepoNames())
+
+const fetchPromise = fetch(`https://api.github.com/users/camscoderepo/repos`);
+
+const nameList = document.getElementById("names");
+
+fetchPromise.then(response => {
+  return response.json();
+}).then(repos => {
+    nameList.innerHTML = listOfRepos(repos); 
+});
+
+      
+function listOfRepos (repos) {
+    const names = repos.map(repo => repo.name).join("\n")
+    .then(names)
 }
-getRepoNames();
 
 
 
-
-
-
-
-    //fetch api request to github repos
-    // fetch('https://api.github.com/users/camscoderepo/repos')
-    // .then(res => res.json())
-    // .then(res => res.map(data => data.url))
-    // .then(urls => console.log(urls));
-    // document.getElementsByClassName('projectLink')
+function listOfURLS (repos) {
+    const urls = repos.map(repo => repo.html_url)
+     document.getElementsByClassName("projectLink") = urls
+}
     
     //Vanta.JS background animation
     VANTA.BIRDS({
@@ -175,10 +176,6 @@ getRepoNames();
         separation: 20,
         cohesion: 20
       })
-
-
-
-
 });
 
 
