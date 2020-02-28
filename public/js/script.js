@@ -17,7 +17,7 @@ $(window).on("load", function() {
 $(document).ready(function() {
     //Typed plugin
     var typed = new Typed(".typed", {
-        strings: ["Developer", "JavaScript Enthusiast", "Autodidact"],
+        strings: ["JavaScript Developer", "Ninja", "Autodidact"],
         typeSpeed: 70,
         loop: true,
         startDelay: 1000,
