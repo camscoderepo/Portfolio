@@ -175,7 +175,7 @@ function listOfURLS (repos) {
         quantity: 3.00,
         separation: 20,
         cohesion: 20
-      })
+    })
 });
 
 
