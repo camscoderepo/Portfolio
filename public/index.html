@@ -108,36 +108,62 @@
   <hr></hr>
   </div>
   
-  <div class="row">
+  <div class="row" style="padding-right: 150px;">
     <div class="col">
       <div id="container"></div>
     </div>
-    <div class="col" style="padding-right: 100px">
+    <!-- <div class="col" style="padding-right: 100px">
       <div class="skillTitle">Design</div>
       <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
       <div class="skillTitle">Project Management</div>
       <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
       <div class="skillTitle">Animation</div>
       <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
       <div class="skillTitle">Usability</div>
       <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
       <div class="skillTitle">Web Development</div>
       <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-      
+        <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+      </div> -->
+
+      <figure class="highcharts-figure" style="width: 50% !important;">
+        <div id="figure-container"></div>
+        <!-- <p class="highcharts-description">
+          Chart designed to highlight 3D column chart rendering options.
+          Move the sliders below to change the basic 3D settings for the chart.
+          3D column charts are generally harder to read than 2D charts, but provide
+          an interesting visual effect.
+        </p> -->
+        <div id="sliders">
+          <table>
+            <tr>
+              <td><label for="alpha">Alpha Angle</label></td>
+              <td><input id="alpha" type="range" min="0" max="45" value="15"/> <span id="alpha-value" class="value"></span></td>
+            </tr>
+            <tr>
+              <td><label for="beta">Beta Angle</label></td>
+              <td><input id="beta" type="range" min="-45" max="45" value="15"/> <span id="beta-value" class="value"></span></td>
+            </tr>
+            <tr>
+              <td><label for="depth">Depth</label></td>
+              <td><input id="depth" type="range" min="20" max="100" value="50"/> <span id="depth-value" class="value"></span></td>
+            </tr>
+          </table>
+        </div>
+      </figure>
     </div>
   </div> 
 </div>
 
+<!--Old contact form-->
 <!-- <div id="contact" class="contactSection section" >
   <div class="col-md-12 text-center">
     <p class="subHeading">Like what you see?</p>
@@ -146,8 +172,9 @@
   </div>
 </div> -->
 
+<!--New Contact form-->
 <div id="contact" class="contactSection section" >
-  <h2 class="title">
+  <h2 class="title" style="padding-bottom: 10px">
     Contact Me
     <hr></hr>
    </h2>
@@ -176,103 +203,11 @@
       </div>
       <div class="itemsContainer">
        <ul class="items">
-         <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
-           <div class="item">
-             <img src="img/portfolio/thumbnails/ShoppingListThumbnail.png">
-             <div class="icons">
-               <a href="img/portfolio/ShoppingList.png" title="View image" class="openButton" data-fancybox data-caption="This is a shopping list app I wrote.">
-                 <i class="fa fa-search"></i>
-               </a>
- 
-               <a href="https://lit-lake-77034.herokuapp.com/" target="_blank" class="projectLink">
-                 <i class="fa fa-link"></i>
-               </a>
-             </div>
-             <div class="imageOverlay"></div>
-           </div>
-         </li>
-         <li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
-           <div class="item">
-             <img src="img/portfolio/thumbnails/of_donut_best_thumbnail.jpg">
-             <div class="icons">
-               <a href="img/portfolio/of_donut_best.png" title="View image" class="openButton" data-fancybox data-caption="This is a rendered image of a donut scene I modeled in blender">
-                 <i class="fa fa-search"></i>
-               </a>
- 
-               <a href="" target="_blank" class="projectLink">
-                 <i class="fa fa-link"></i>
-               </a>
-             </div>
-             <div class="imageOverlay"></div>
-           </div>
-         </li>
- 
-         <li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
-             <div class="item">
-               <img src="img/portfolio/thumbnails/beer_glass_with_beer_thumbnail.png">
-               <div class="icons">
-                 <a href="img/portfolio/beer_glass_with_beer.png" title="View image" class="openButton" data-fancybox data-caption="This is a render of a beer glass I modeled in blender!">
-                   <i class="fa fa-search"></i>
-                 </a>
-   
-                 <a href="" target="_blank" class="projectLink">
-                   <i class="fa fa-link"></i>
-                 </a>
-               </div>
-               <div class="imageOverlay"></div>
-             </div>
-           </li>
- 
-           <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
-             <div class="item">
-               <img src="img/portfolio/thumbnails/SpaceXLaunchesThumb.png">
-               <div class="icons">
-                 <a href="img/portfolio/SpaceXLaunches.png" title="View image" class="openButton" data-fancybox data-caption="This is a spacex app I wrote">
-                   <i class="fa fa-search"></i>
-                 </a>
-   
-                 <a href="https://warm-earth-86428.herokuapp.com/" target="_blank" class="projectLink">
-                   <i class="fa fa-link"></i>
-                 </a>
-               </div>
-               <div class="imageOverlay"></div>
-             </div>
-             </li>
- 
-             <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
-               <div class="item">
-                 <img src="img/portfolio/thumbnails/PigGameThumbnail.png">
-                 <div class="icons">
-                   <a href="img/portfolio/PigGame.png" title="View image" class="openButton" data-fancybox data-caption="This is a pig game I wrote in javascript">
-                     <i class="fa fa-search"></i>
-                   </a>
-     
-                   <a href="https://github.com/camscoderepo/Pig_Game" target="_blank" class="projectLink">
-                     <i class="fa fa-link"></i>
-                   </a>
-                 </div>
-                 <div class="imageOverlay"></div>
-               </div>
-             </li> 
-          </ul>
-        <ul id="github">
-          <li id="names" onclick="" class="github col-xs-6 col-sm-4 col-md-3 col-lg-3">
-              <div class="name">
-                <img src="">
-                <div class="icons">
-                  <a href="img/portfolio/ShoppingList.png" title="View image" class="openButton" data-fancybox data-caption="This is a shopping list app I wrote.">
-                    <i class="fa fa-search"></i>
-                  </a>
-    
-                  <a href="" target="_blank" class="projectLink">
-                    <i class="fa fa-link"></i>
-                  </a>
-                </div>
-                <div class="imageOverlay"></div>
-              </div>
-            </li>
+        <div class="repos">
+
+        </div>
         </ul>
-     </div>
+      </div>
     </div>
   </div>
 </div>
@@ -286,6 +221,7 @@
 <script defer src="https://code.highcharts.com/highcharts-3d.js"></script>
 <script defer src="https://code.highcharts.com/modules/exporting.js"></script>
 <script defer src="https://code.highcharts.com/modules/export-data.js"></script>
+<script defer src="https://code.highcharts.com/modules/accessibility.js"></script>
 
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script src="js/typed.min.js"></script>

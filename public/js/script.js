@@ -107,20 +107,75 @@ $(document).ready(function() {
             type: 'pie',
             name: 'Skill percentage',
             data: [
-                ['Javascript', 45.0],
-                ['HTML', 26.8],
+                ['Javascript', 50.0],
+                ['HTML',8.4 ],
                 {
                     name: 'CSS',
-                    y: 12.8,
+                    y: 10,
                     sliced: true,
                     selected: true
                 },
                 ['SQL', 8.5],
+                ['C#', 2],
+                ['GO', 15.0],
                 ['Python', 6.2],
                 ['PHP', 0.7]
             ]
         }]
     });
+
+    //HighCharts bar chart
+
+    var chart = new Highcharts.Chart({
+        chart: {
+          renderTo: 'figure-container',
+          backgroundColor: '#fefbd8',
+          type: 'column',
+          options3d: {
+            enabled: true,
+            alpha: 15,
+            beta: 15,
+            depth: 50,
+            viewDistance: 25
+          }
+        },
+        title: {
+          text: 'Dev Skills Chart'
+        },
+        subtitle: {
+          text: 'Test options by dragging the sliders below'
+        },
+        plotOptions: {
+          column: {
+            depth: 80
+          }
+        },
+        series: [{
+            data: [
+                ['Web Dev', 89.0],
+                ['Accessibility',50 ],
+                ['Design', 80.5],
+                ['Animation', 85],
+                ['Back-End', 88.2]
+            
+            ]
+        }]
+      });
+      
+      function showValues() {
+        $('#alpha-value').html(chart.options.chart.options3d.alpha);
+        $('#beta-value').html(chart.options.chart.options3d.beta);
+        $('#depth-value').html(chart.options.chart.options3d.depth);
+      }
+      
+      // Activate the sliders
+      $('#sliders input').on('input change', function () {
+        chart.options.chart.options3d[this.id] = parseFloat(this.value);
+        showValues();
+        chart.redraw(false);
+      });
+      
+      showValues();
 
     
 
