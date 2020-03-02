@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Roman's Creations</title>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-
-<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<link rel="stylesheet" href="dist/bundle.css">
+<!-- 
+<script src="js/three.r95.min.js"></script>
+<script src="js/vanta.clouds.min.js"></script> -->
 <script  src="js/three.r92.min.js"></script>
 <script src="js/vanta.birds.min.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+<script src="dist/bundle.js"></script>
 
 
 
@@ -75,7 +78,7 @@
       </div>
       <div class="row">
         <div class="col-md-5">
-          <img class="aboutImage" src="img/about.jpg">
+          <img class="aboutImage" src="img/about.jpg" alt="text">
         </div>
         <div class="col-md-7">
            
@@ -179,9 +182,12 @@
     <hr></hr>
    </h2>
   <form action="https://www.enformed.io/ht84km62" method="POST">
-    <input name="name" type="text" class="feedback-input" placeholder="Name" required/>   
-    <input name="email" type="text" class="feedback-input" placeholder="Email" required/>
-    <textarea name="text" class="feedback-input" placeholder="Comment" required></textarea>
+    <label for="name"></label>
+    <input name="name" type="text" class="feedback-input" id="name" placeholder="Name" required/>
+    <label for="email"></label>   
+    <input name="email" type="text" class="feedback-input" id="email" placeholder="Email" required/>
+    <label for="text"></label>
+    <textarea name="text" class="feedback-input" id="text" placeholder="Comment" required></textarea>
     <input type="submit" value="SUBMIT"/>
   </form>
 </div>
@@ -197,6 +203,7 @@
      </div>
      <div class="filter">
         <ul id="filters">
+          <li><a href="#" data-filter=".all" >all</a></li>
           <li><a href="#" data-filter=".me" >me</a></li>
           <li><a href="#" data-filter=".websites" >Websites</a></li>
         </ul>
@@ -222,6 +229,8 @@
 <script defer src="https://code.highcharts.com/modules/exporting.js"></script>
 <script defer src="https://code.highcharts.com/modules/export-data.js"></script>
 <script defer src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+
 
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script src="js/typed.min.js"></script>

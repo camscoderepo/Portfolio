@@ -47,10 +47,10 @@ body{
     font-size:20px
 }
 #about{
-    background-color:#fefbd8
+    background-color:#FFDAB9;
 }
 #skills{
-    background-color:#fefbd8
+    background-color:#FFDAB9;
 }
 .section{
     padding:100px 0
@@ -59,9 +59,7 @@ body{
     max-width:90%;
     padding-bottom:50px
 }
-.skillsSection{
-    background-color:#fff
-}
+
 .contactSection{
     background-color:#0f7bff;
     color:#fff
@@ -307,8 +305,8 @@ body{
     top:0;
     text-align:center;
     width:100%;
-    background-color:#fefbd8;
-    height:55px
+    background-color:#FFDAB9;
+    height:55px;
 }
 .loader{
     width:100%;
@@ -381,7 +379,7 @@ hr{
     
 }
 .navbar{
-    background-color:#fefbd8
+    background-color:#FFDAB9
 }
 #resume .title p{
     font-size:20px;

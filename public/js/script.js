@@ -14,17 +14,42 @@ $(window).on("load", function() {
 
 });
 
+new Vue({
+
+})
+
 $(document).ready(function() {
     //Typed plugin
     var typed = new Typed(".typed", {
         strings: ["JavaScript Developer", "Ninja", "Autodidact"],
-        typeSpeed: 70,
+        typeSpeed: 100,
         loop: true,
         startDelay: 1000,
         showCursor: false
     }); 
+
+    const observer = lozad();
+    observer.observe
+
+      //Vanta.JS background animation
+    VANTA.BIRDS({
+        el: "#birds",
+        backgroundColor: 0xf7bff,
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        birdSize: 4.00,
+        wingSpan: 40.00,
+        speedLimit: 6.00,
+        cohesion: 10.00,
+        quantity: 5.00
+    })
    
    $("[data-fancybox]").fancybox();
+
    //filters for portfolio
    $("#filters a").click(function() {
        $("#filters .current").removeClass("current");
@@ -180,57 +205,36 @@ $(document).ready(function() {
     
 
     //promise to get github repositories
-//     const getRepoNames = async () =>
-// {
-//         const response = await fetch(`https://api.github.com/users/camscoderepo/repos`);
-//         if(!response.status){
-//             throw new Error('Network response was not good')
-//         }
-//         const data = await response.json()
+ 
+// const fetchPromise = fetch(`https://api.github.com/users/camscoderepo/repos`);
 
-//         const names = await data.map(name => {
-//             return name.name
-//         }) 
-//         return names
-//     } 
+// const nameList = document.getElementById("names");
 
-// console.log(getRepoNames())
-
-const fetchPromise = fetch(`https://api.github.com/users/camscoderepo/repos`);
-
-const nameList = document.getElementById("names");
-
-fetchPromise.then(response => {
-  return response.json();
-}).then(repos => {
-    nameList.innerHTML = listOfRepos(repos); 
-});
+// fetchPromise.then(response => {
+//   return response.json();
+// }).then(repos => {
+//     nameList.innerHTML = listOfRepos(repos); 
+// });
 
       
-function listOfRepos (repos) {
-    const names = repos.map(repo => repo.name).join("\n")
-    .then(names)
-}
+// function listOfRepos (repos) {
+//     const names = repos.map(repo => repo.name).join("\n")
+//     .then(names)
+// }
 
 
 
-function listOfURLS (repos) {
-    const urls = repos.map(repo => repo.html_url)
-     document.getElementsByClassName("projectLink") = urls
-}
-    
-    //Vanta.JS background animation
-    VANTA.BIRDS({
-        el: "#birds",
-        backgroundColor: 0xf7bff,
-        //color1: 0xcf1d1d,
-        //color2: 0xc0c033,
-        wingSpan: 35.00,
-        speedLimit: 9.00,
-        quantity: 3.00,
-        separation: 20,
-        cohesion: 20
-    })
+
+  
+
+    //Vanta Clouds
+    // VANTA.CLOUDS({
+    //     el: "#birds",
+    //     mouseControls: true,
+    //     touchControls: true,
+    //     minHeight: 200.00,
+    //     minWidth: 200.00
+    //   })
 });
 
 
