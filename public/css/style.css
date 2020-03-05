@@ -52,17 +52,17 @@ body{
 #skills{
     background-color:#fefbd8;
 }
+#contact{
+    background-color:#0f7bff;
+    color:#fff;
+    padding: 50px;
+}
 .section{
     padding:100px 0
 }
 .aboutImage{
     max-width:90%;
     padding-bottom:50px
-}
-
-.contactSection{
-    background-color:#0f7bff;
-    color:#fff
 }
 .skill{
     text-align:center;
@@ -161,6 +161,7 @@ body{
     width:100%
 }
 .section .heading{
+    font-family: Arial, Helvetica, sans-serif;
     text-align:center;
     padding-bottom:40px;
     width:100%
