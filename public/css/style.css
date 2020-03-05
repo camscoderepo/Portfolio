@@ -8,7 +8,7 @@ body{
     background-color:#fff;
     letter-spacing:1px;
     width:100%;
-    overflow-x:hidden
+    overflow-x:hidden;
 }
 
     /* @media only screen and (max-width:900px) {
@@ -47,10 +47,10 @@ body{
     font-size:20px
 }
 #about{
-    background-color:#FFDAB9;
+    background-color:#fefbd8;
 }
 #skills{
-    background-color:#FFDAB9;
+    background-color:#fefbd8;
 }
 .section{
     padding:100px 0
@@ -67,27 +67,6 @@ body{
 .skill{
     text-align:center;
     margin-left:10px
-}
-.chart{
-    position:relative;
-    width:152px;
-    height:152px;
-    display:inline-block;
-    text-align:center
-}
-.chart canvas{
-    position:absolute;
-    left:0;
-    top:0
-}
-.chart .percent{
-    color:#000;
-    line-height:152px;
-    display:inline-block;
-    font-size:35px
-}
-.chart .percent:after{
-    content:'%'
 }
 .squareItem{
     margin-top:30px;
@@ -154,12 +133,12 @@ body{
     border:1px solid #fff;
     border-radius:5px;
     font-size:20px;
-    font-family:sans-serif,fantasy
+    font-family:Arial,Helvetica,sans-serif
 }
 .resumeButton:hover{
     text-decoration:none;
     color:#0f7bff;
-    background-color:#fff
+    background-color:#fff;
 }
 .filter a{
     color:#bdc3c7;
@@ -305,8 +284,8 @@ body{
     top:0;
     text-align:center;
     width:100%;
-    background-color:#FFDAB9;
-    height:55px;
+    background-color: #fefbd8;
+    height:55px
 }
 .loader{
     width:100%;
@@ -379,14 +358,14 @@ hr{
     
 }
 .navbar{
-    background-color:#FFDAB9
+    background-color:#fefbd8;
 }
 #resume .title p{
     font-size:20px;
     margin-bottom:-40px
 }
 p{
-    font-size:18px
+    font-size:18px;
 }
 
 /* Contact Form */
@@ -449,6 +428,4 @@ textarea {
     white-space: nowrap;
   }
 
- div .row{
-     margin-right: none !important;
- }
+ 
