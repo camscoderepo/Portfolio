@@ -11,18 +11,6 @@ body{
     overflow-x:hidden;
 }
 
-    /* @media only screen and (max-width:900px) {
-        #birds {
-            -webkit-animation: none !important;
-            -moz-animation: none !important;
-            -o-animation: none !important;
-            -ms-animation: none !important;
-            animation: none !important;
-            background-color: #0f7bff;
-        }
-    
-    } */
-
 .titleMessage{
     position:absolute;
     width:100%;
@@ -112,19 +100,7 @@ body{
     font-size:45px;
     margin-left:-20%
 }
-.contactButton{
-    color:#fff;
-    padding:15px 20px;
-    display:inline-block;
-    margin-top:20px;
-    border:1px solid #fff;
-    border-radius:5px
-}
-.contactButton:hover{
-    text-decoration:none;
-    color:#0f7bff;
-    background-color:#fff
-}
+
 .resumeButton{
     color:#fff;
     padding:15px 35px;
@@ -322,11 +298,7 @@ body{
 .highcharts-button{
     display:none
 }
-.progress{
-    height:20px!important;
-    margin-bottom:2rem;
-    border-radius:10px
-}
+
 .skillTitle{
     font-size:16px;
     font-family:Arial,Helvetica,sans-serif
@@ -355,7 +327,7 @@ hr{
     font-size:44px
 }
 .canvas-container div{
-    height:920px!important
+    height:920px!important;
     
 }
 .navbar{
