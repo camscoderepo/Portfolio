@@ -94,7 +94,6 @@ $(document).ready(function(){
 
   }
 
-
   //Highchart pie chart (skills chart)
   Highcharts.chart('container', {
       chart: {
