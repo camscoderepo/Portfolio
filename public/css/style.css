@@ -11,6 +11,18 @@ body{
     overflow-x:hidden;
 }
 
+    /* @media only screen and (max-width:900px) {
+        #birds {
+            -webkit-animation: none !important;
+            -moz-animation: none !important;
+            -o-animation: none !important;
+            -ms-animation: none !important;
+            animation: none !important;
+            background-color: #0f7bff;
+        }
+    
+    } */
+
 .titleMessage{
     position:absolute;
     width:100%;
@@ -100,7 +112,19 @@ body{
     font-size:45px;
     margin-left:-20%
 }
-
+.contactButton{
+    color:#fff;
+    padding:15px 20px;
+    display:inline-block;
+    margin-top:20px;
+    border:1px solid #fff;
+    border-radius:5px
+}
+.contactButton:hover{
+    text-decoration:none;
+    color:#0f7bff;
+    background-color:#fff
+}
 .resumeButton{
     color:#fff;
     padding:15px 35px;
@@ -284,6 +308,13 @@ body{
     height:400px;
     margin:0 auto
 }
+@media only screen and (max-width: 600px){
+    #container{
+        max-width:660px;
+        margin: 15px;
+        height:400px;
+    }
+}
 .h2{
     font-family:freight-sans-pro,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight:700;
@@ -298,7 +329,11 @@ body{
 .highcharts-button{
     display:none
 }
-
+.progress{
+    height:20px!important;
+    margin-bottom:2rem;
+    border-radius:10px
+}
 .skillTitle{
     font-size:16px;
     font-family:Arial,Helvetica,sans-serif
@@ -327,7 +362,7 @@ hr{
     font-size:44px
 }
 .canvas-container div{
-    height:920px!important;
+    height:920px!important
     
 }
 .navbar{
@@ -394,11 +429,32 @@ textarea {
   }
   
   #sliders td input[type=range] {
-    display: inline;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    
   }
   #sliders td {
     padding-right: 1em;
-    white-space: nowrap;
+    white-space: nowrap; 
+  }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 20px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    border-radius: 50%;
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
   }
 
- 
+ /*Media Queries*/
+@media only screen and (max-width: 600px){
+
+}
