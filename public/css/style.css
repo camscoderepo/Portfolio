@@ -450,7 +450,7 @@ textarea {
     width: 20px; /* Set a specific slider handle width */
     height: 20px; /* Slider handle height */
     border-radius: 50%;
-    background: #4CAF50; /* Green background */
+    background: #7cb5ec; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
 
