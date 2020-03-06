@@ -14,7 +14,7 @@ $(window).on("load", function() {
 
 });
 
-document.addEventListener("DOMContentLoaded", function(event) {
+$(document).ready(function(){
 
     var typed = new Typed(".typed", {
         strings: ["JavaScript Developer", "Ninja", "Autodidact"],
@@ -180,6 +180,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 ]
             }]
           });
+
+          
           
           function showValues() {
             $('#alpha-value').html(chart.options.chart.options3d.alpha);
