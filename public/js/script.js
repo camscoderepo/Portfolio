@@ -170,15 +170,19 @@ $(document).ready(function(){
           depth: 80
         }
       },
+      xAxis: {
+
+      },
       series: [{
+          name: 'Development Skills',
           data: [
-              ['Web Dev', 89.0],
-              ['Accessibility',85 ],
-              ['Design', 80.5],
-              ['Animation', 85],
-              ['Back-End', 88.2]
-          
+            ['Web Dev', 89.0],
+            ['Accessibility',85 ],
+            ['Design', 80.5],
+            ['Animation', 85],
+            ['Back-End', 88.2]
           ]
+          
       }]
     });
 
